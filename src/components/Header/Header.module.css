@@ -1,0 +1,45 @@
+.header {
+	width: 20%;
+	flex-shrink: 0;
+	border-radius: 30px 0px 0px 30px;
+	border-right: 1px solid #fad4ce;
+	background: #594b49;
+}
+
+.statuses {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.status {
+	position: relative;
+	font-size: 1.4rem;
+	margin: 0.3rem;
+	margin-top: 0.4rem;
+	margin-bottom: 1.4rem;
+	padding: 0.4rem;
+	text-transform: capitalize;
+	background-color: transparent;
+	color: var(--color-accent);
+	opacity: 0.8;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.status:hover,
+.status.selected {
+	opacity: 1;
+}
+
+.status.selected::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text);
+  transition: opacity 0.2s ease;
+}
