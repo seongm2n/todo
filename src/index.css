@@ -3,7 +3,10 @@
 	--color-bg: #feb9afb2;
 	--color-crimson: #f67f6d;
 	--color-text: #ffffff;
+	--color-light-lime: #f7ffcb;
 	--color-accent: #d3e663;
+	--color-dark-pink: #f6ada1;
+	--color-pink: #fad4ce;
 }
 
 #root {
