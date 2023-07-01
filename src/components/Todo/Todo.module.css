@@ -12,8 +12,8 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
-	width: 1.2rem;
-	height: 1.2rem;
+	width: 1rem;
+	height: 1rem;
 	cursor: pointer;
 	border: 1px solid var(--color-light-lime);
 	border-radius: 50%;
@@ -27,7 +27,7 @@
 	left: 0;
 	width: 90px;
 	height: 3px;
-	background-color: var(--color-crimson);
+	background-color: var(--color-text);
 }
 
 .checkbox::before {
