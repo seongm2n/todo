@@ -1,0 +1,57 @@
+.todo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	margin: 0.1rem 0;
+	color: var(--color-text);
+}
+
+.checkbox {
+	color: var(--color-text);
+	width: 1.2rem;
+	height: 1.2rem;
+	cursor: pointer;
+}
+
+.checkbox:checked ~ .text::before {
+	content: '';
+	position: absolute;
+	top: 9px;
+	left: 0;
+	width: 90px;
+	height: 3px;
+	background-color: var(--color-crimson);
+}
+
+.text {
+	cursor: pointer;
+	flex: 1 1 0%;
+	margin-left: 0.5rem;
+	font-size: 1.1rem;
+	position: relative;
+}
+
+.text::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -0.2rem;
+	width: 100%;
+	height: 3px;
+	border-radius: 30px;
+
+	background-color: var(--color-light-lime);
+}
+
+.icon:hover {
+	transform: scale(1.2);
+}
+.button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 1.3rem;
+	cursor: pointer;
+	color: var(--color-light-lime);
+}

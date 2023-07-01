@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiTrash2 } from 'react-icons/fi';
+import styles from './Todo.module.css';
 
 function Todo({ todo, onUpdate, onDelete }) {
 	const { text, status } = todo;
@@ -7,19 +8,28 @@ function Todo({ todo, onUpdate, onDelete }) {
 		const status = e.target.checked ? 'done' : 'active';
 		onUpdate({ ...todo, status });
 	};
-  
+
 	const handleDelete = () => onDelete(todo);
 	return (
-		<li>
+		<li className={styles.todo}>
 			<input
+				className={styles.checkbox}
 				type='checkbox'
-				id='checkbox'
+				id={`checkbox-${todo.id}`}
 				checked={status === 'done'}
 				onChange={handleChange}
 			/>
-			<label htmlFor='checkbox'>{text}</label>
-			<button onClick={handleDelete}>
-				<FiTrash2 />
+			<label
+				htmlFor={`checkbox-${todo.id}`}
+				className={styles.text}
+			>
+				{text}
+			</label>
+			<button
+				onClick={handleDelete}
+				className={styles.button}
+			>
+				<FiTrash2 className={styles.icon}/>
 			</button>
 		</li>
 	);
