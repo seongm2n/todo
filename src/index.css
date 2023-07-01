@@ -7,6 +7,7 @@
 	--color-accent: #d3e663;
 	--color-dark-pink: #f6ada1;
 	--color-pink: #fad4ce;
+	--color-scrollbar: #594b49;
 }
 
 #root {
@@ -55,4 +56,26 @@ ul {
 button {
 	outline: none;
 	border: none;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-scrollbar);
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-accent);
+}
+::-webkit-scrollbar-thumb:active {
+	background: var(--color-accent);
+}
+::-webkit-scrollbar-track {
+	background: var(--color-bg-dark);
+	border: 0px none #ffffff;
+	border-radius: 8px;
 }
