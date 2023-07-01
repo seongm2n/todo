@@ -3,7 +3,7 @@ import { FiTrash2 } from 'react-icons/fi';
 import styles from './Todo.module.css';
 
 function Todo({ todo, onUpdate, onDelete }) {
-	const { text, status } = todo;
+	const { id, text, status } = todo;
 	const handleChange = (e) => {
 		const status = e.target.checked ? 'done' : 'active';
 		onUpdate({ ...todo, status });
@@ -15,12 +15,12 @@ function Todo({ todo, onUpdate, onDelete }) {
 			<input
 				className={styles.checkbox}
 				type='checkbox'
-				id={`checkbox-${todo.id}`}
+				id={`checkbox-${id}`}
 				checked={status === 'done'}
 				onChange={handleChange}
 			/>
 			<label
-				htmlFor={`checkbox-${todo.id}`}
+				htmlFor={`checkbox-${id}`}
 				className={styles.text}
 			>
 				{text}
