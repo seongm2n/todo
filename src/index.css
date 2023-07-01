@@ -34,8 +34,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
+	accent-color: var(--color-accent);
 	background-color: #7a635fb2;
-	accent-color: var(--color-light-lime);
 }
 
 code {
