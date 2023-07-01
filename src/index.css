@@ -35,11 +35,16 @@ body {
 	align-items: center;
 	font-size: 1.2rem;
 	background-color: #7a635fb2;
+	accent-color: var(--color-light-lime);
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 ul {
