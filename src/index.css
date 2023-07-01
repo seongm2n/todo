@@ -1,13 +1,18 @@
 :root {
-	--color-bg-dark: #725c59;
-	--color-bg: #FEB9AF;
+	--color-bg-dark: #f6ada1;
+	--color-bg: #feb9af;
 	--color-crimson: #f67f6d;
-	--color-text: #ffffff;
+	--color-text: #525252;
 	--color-light-lime: #f7ffcb;
 	--color-accent: #d3e663;
-	--color-dark-pink: #f6ada1;
 	--color-pink: #fad4ce;
 	--color-scrollbar: #594b49;
+}
+
+html.dark {
+	--color-bg-dark: #594b49;
+	--color-bg: #725c59;
+	--color-text: #ffffff;
 }
 
 #root {

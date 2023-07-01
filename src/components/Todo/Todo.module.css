@@ -27,7 +27,7 @@
 	left: 0;
 	width: 90px;
 	height: 3px;
-	background-color: var(--color-text);
+	background-color: var(--color-accent);
 }
 
 .checkbox::before {
