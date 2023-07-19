@@ -12,10 +12,11 @@
 <img src="https://img.shields.io/badge/Code-React-informational?style=flat&logo=react&color=61DAFB">
 <img src="https://img.shields.io/badge/Stlye-PostCSS-informational?style=flat&logo=postcss&color=DD3A0A"> 
 <img src="https://img.shields.io/badge/Library-React qurey-informational?style=flat&logo=reactquery&color=FF4154">
-
+</p>
 <br>
-<img src="https://img.shields.io/badge/Tool-Figma-informational?style=flat&logo=Figma&color=df4f25">
+<p>
 <img src="https://img.shields.io/badge/Tool-Visual Studio Code-informational?style=flat&logo=visualstudiocode&color=007ACC">
+<img src="https://img.shields.io/badge/Tool-Figma-informational?style=flat&logo=Figma&color=df4f25">
 </p>
 
 ### Planning
